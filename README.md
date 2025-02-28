@@ -1,3 +1,5 @@
+# All tasks are completed ✅
+
 # 📊 Trade Processing API
 
 ## 🚀 Project Setup  
