@@ -106,11 +106,7 @@ A background task can be implemented to periodically check for updates in `trade
 ✔ **Kafka Support (or another message broker)**  
 Trade data can be sent and received via **Kafka**, making the system more flexible and scalable.  
 
----
-
-## 📜 License  
-
-This project is licensed under the **MIT License**.  
+---  
 
 📌 **Author:** [Tymofii Shovkun](https://github.com/ShovkunTimofejj)  
 
