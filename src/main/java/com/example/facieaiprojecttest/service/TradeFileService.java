@@ -24,7 +24,8 @@ public class TradeFileService {
     private static final Logger logger = LoggerFactory.getLogger(TradeFileService.class);
     private final TradeService tradeService;
 
-    public CompletableFuture<Void> processFile(MultipartFile file, String format, String acceptHeader, HttpServletResponse response) {
+    public CompletableFuture<Void> processFile(MultipartFile file, String format, String acceptHeader,
+                                               HttpServletResponse response) {
         if (file.isEmpty()) {
             return handleEmptyFile(response);
         }
@@ -63,7 +64,9 @@ public class TradeFileService {
         return null;
     }
 
-    private void writeResponseBasedOnFormat(HttpServletResponse response, List<EnrichedTrade> enrichedTrades, String acceptHeader) {
+    private void writeResponseBasedOnFormat(HttpServletResponse response,
+                                            List<EnrichedTrade> enrichedTrades,
+                                            String acceptHeader) {
         try {
             if (acceptHeader.contains("text/csv")) {
                 response.setContentType("text/csv");

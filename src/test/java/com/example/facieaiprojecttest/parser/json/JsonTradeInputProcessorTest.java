@@ -32,7 +32,8 @@ public class JsonTradeInputProcessorTest {
         trades.add(trade);
         String json = "[{\"currency\": \"USD\", \"productId\": \"123\", \"date\": \"2023-01-01\", \"price\": 10.0}]";
 
-        List<Trade> expectedTrades = objectMapper.readValue(json, objectMapper.getTypeFactory().constructCollectionType(List.class, Trade.class));
+        List<Trade> expectedTrades = objectMapper.readValue(json, objectMapper.getTypeFactory()
+                .constructCollectionType(List.class, Trade.class));
 
         List<Trade> result = jsonTradeInputProcessor.parse(json);
 
@@ -43,7 +44,8 @@ public class JsonTradeInputProcessorTest {
     void testParseEmptyJson() {
         String json = "";
 
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> jsonTradeInputProcessor.parse(json));
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> jsonTradeInputProcessor
+                .parse(json));
         assertEquals("JSON input cannot be null or empty", exception.getMessage());
     }
 
@@ -51,7 +53,8 @@ public class JsonTradeInputProcessorTest {
     void testParseNullJson() {
         String json = null;
 
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> jsonTradeInputProcessor.parse(json));
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> jsonTradeInputProcessor
+                .parse(json));
         assertEquals("JSON input cannot be null or empty", exception.getMessage());
     }
 
@@ -59,8 +62,10 @@ public class JsonTradeInputProcessorTest {
     void testParseInvalidJson() {
         String json = "[{\"currency\": \"USD\", \"productId\": \"123\", \"date\": \"Invalid Date\", \"price\": \"Invalid Price\"}]";
 
-        assertThrows(JsonMappingException.class, () -> objectMapper.readValue(json, objectMapper.getTypeFactory().constructCollectionType(List.class, Trade.class)));
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> jsonTradeInputProcessor.parse(json));
+        assertThrows(JsonMappingException.class, () -> objectMapper.readValue(json, objectMapper.getTypeFactory()
+                .constructCollectionType(List.class, Trade.class)));
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> jsonTradeInputProcessor
+                .parse(json));
         assertEquals("Invalid JSON structure: ", exception.getMessage().substring(0, 24));
     }
 
