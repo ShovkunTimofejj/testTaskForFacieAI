@@ -1,4 +1,3 @@
-```md
 # 📊 Trade Processing API
 
 ## 🚀 Project Setup  
