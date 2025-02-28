@@ -32,7 +32,7 @@ build/
 ### VS Code ###
 .vscode/
 .idea/
-/mvnw.cmd
-/mvnw
+/.mvn/wrapper/maven-wrapper.properties
 /.gitattributes
-/.mvn/
+/mvnw
+/mvnw.cmd

@@ -1,0 +1,142 @@
+[
+  {
+    "date": "20230101",
+    "productId": "1",
+    "currency": "USD",
+    "price": 100.25
+  },
+  {
+    "date": "20230101",
+    "productId": "2",
+    "currency": "EUR",
+    "price": 200.45
+  },
+  {
+    "date": "20230101",
+    "productId": "3",
+    "currency": "GBP",
+    "price": 300.50
+  },
+  {
+    "date": "20230102",
+    "productId": "4",
+    "currency": "USD",
+    "price": 150.75
+  },
+  {
+    "date": "20230102",
+    "productId": "5",
+    "currency": "EUR",
+    "price": 250.85
+  },
+  {
+    "date": "20230103",
+    "productId": "6",
+    "currency": "GBP",
+    "price": 350.95
+  },
+  {
+    "date": "20230103",
+    "productId": "7",
+    "currency": "USD",
+    "price": 400.10
+  },
+  {
+    "date": "20230104",
+    "productId": "8",
+    "currency": "EUR",
+    "price": 450.20
+  },
+  {
+    "date": "20230104",
+    "productId": "9",
+    "currency": "GBP",
+    "price": 500.30
+  },
+  {
+    "date": "20230105",
+    "productId": "10",
+    "currency": "USD",
+    "price": 550.40
+  },
+  {
+    "date": "20230105",
+    "productId": "11",
+    "currency": "EUR",
+    "price": 600.50
+  },
+  {
+    "date": "20230106",
+    "productId": "2",
+    "currency": "USD",
+    "price": 700.60
+  },
+  {
+    "date": "20230106",
+    "productId": "3",
+    "currency": "EUR",
+    "price": 800.70
+  },
+  {
+    "date": "20230107",
+    "productId": "12",
+    "currency": "GBP",
+    "price": 900.80
+  },
+  {
+    "date": "20230107",
+    "productId": "13",
+    "currency": "USD",
+    "price": 1000.90
+  },
+  {
+    "date": "20230108",
+    "productId": "1",
+    "currency": "EUR",
+    "price": 1100.10
+  },
+  {
+    "date": "20230108",
+    "productId": "4",
+    "currency": "GBP",
+    "price": 1200.20
+  },
+  {
+    "date": "20230109",
+    "productId": "5",
+    "currency": "USD",
+    "price": 1300.30
+  },
+  {
+    "date": "20230109",
+    "productId": "6",
+    "currency": "EUR",
+    "price": 1400.40
+  },
+  {
+    "date": "20230110",
+    "productId": "7",
+    "currency": "GBP",
+    "price": 1500.50
+  },
+  {
+    "date": "20131231",
+    "productId": "10",
+    "currency": "USD",
+    "price": 1600.60
+  },
+  {
+    "date": "invalidDate",
+    "productId": "1",
+    "currency": "EUR",
+    "price": 1700.70
+  },
+  {
+    "date": "20230111",
+    "productId": "5",
+    "currency": "GBP",
+    "price": 1800.80
+  }
+]
+
+
